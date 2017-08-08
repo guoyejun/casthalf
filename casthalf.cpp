@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("input float value: %f\n",f);
 
 		half h(f);
-		printf("internal 16bits value: %d (0x%x)\n", h.data_, h.data_);  
+		printf("internal 16bits value: %d (0x%x)\naccurate float value: %f\n", h.data_, h.data_, float(h));
 	}
 	else
 	{
